@@ -6,6 +6,7 @@
         <exploded>true</exploded>
         <module>primefaces</module>
         <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="root">
@@ -18,6 +19,7 @@
           <element id="library" level="project" name="Maven: com.sun.faces:jsf-impl:2.2.8" />
           <element id="library" level="project" name="Maven: org.primefaces:primefaces:10.0.0" />
           <element id="library" level="project" name="Maven: org.webjars.npm:primeflex:2.0.0" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">

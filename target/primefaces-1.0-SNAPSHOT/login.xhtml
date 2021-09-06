@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+    <h:outputStylesheet name="css/login.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>Login Page</title>
+    <link type="text/css"
+          href="${facesContext.externalContext.requestContextPath}/resources/css/style.css"
+          rel="stylesheet" />
+    <link type="image/x-icon"
+          href="${facesContext.externalContext.requestContextPath}/resources/images/favicon.ico"
+          rel="shortcut icon" />
+</h:head>
+
+<h:body id="body" style="position: absolute;margin: 0px;width: 100%; height: 100%; top:0; left:0;">
+    <div id="message">
+        <p:ajaxStatus style="display:block;  margin-top:.5em;">
+            <f:facet name="default">
+                <h:outputText value="Please enter your credentials." />
+            </f:facet>
+            <f:facet name="start">
+                <h:outputText value="Please wait #{login.userName}, Connecting database..." />
+            </f:facet>
+            <f:facet name="complete">
+                <h:outputText value="Please try again #{login.userName}, Database/Login error!!" />
+            </f:facet>
+        </p:ajaxStatus>
+        <p:ajaxStatus onstart="PF('loading').show()" onsuccess="PF('loading').hide()"/>
+        <p:blockUI  widgetVar="loading" block="body">
+            <h:panelGrid id="blockUiPanel" columns="2"
+                         style="display:block; border: none;">
+                <i class="pi pi-spin pi-spinner" style="font-size: 3rem;color: lawngreen;"></i>
+                <h:outputText value="Please Wait..."
+                              style="white-space: nowrap;" />
+            </h:panelGrid>
+        </p:blockUI>
+    </div>
+
+    <h:form id="loginForm">
+        <p:growl id="msg" showDetail="true" life="3000" />
+        <p:panel id="loginPnl" header="Login"
+                 style="width: 350px; margin: 0 auto;">
+            <h:panelGrid id="loginPanel" columns="2" cellpadding="5">
+                <h:outputText value="Username" />
+                <p:inputText id="username" value="#{login.userName}" required="true"></p:inputText>
+                <p:spacer /><p:spacer />
+                <h:outputText value="Password" />
+                <p:password id="password" value="#{login.password}" required="true"
+                            feedback="false"></p:password>
+                <p:message for="password"></p:message>
+            </h:panelGrid>
+            <h:panelGrid columns="1" cellpadding="10" width="100%">
+                <p:commandButton id="loginButton" action="#{login.loginControl}"
+                                 value="Login" update="loginForm" ajax="true" style="float: right;">
+                </p:commandButton>
+            </h:panelGrid>
+        </p:panel>
+    </h:form>
+</h:body>
+</html>

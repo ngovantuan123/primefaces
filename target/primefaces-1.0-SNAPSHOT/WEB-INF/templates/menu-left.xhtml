@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<f:view>
+    <body>
+    <div class="card">
+        <div class="p-col-12">
+            <div class="p-col-12">
+            <div class="p-d-flex p-jc-center" style="height:100px;background-color: #005489">
+                    <div class="p-d-flex-column">
+                        <p:graphicImage library="images" name="logo.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h:form>
+            <p:growl>
+                <p:autoUpdate/>
+            </p:growl>
+
+            <p:panelMenu style="width:300px">
+                <p:submenu label="Options">
+                    <p:menuitem value="Save (Non-Ajax)" action="#{menuView.save}" ajax="false"
+                                icon="pi pi-save"/>
+                    <p:menuitem value="Update" action="#{menuView.update}" icon="pi pi-refresh"/>
+                    <p:menuitem value="Delete" action="#{menuView.delete}" icon="pi pi-times"/>
+                </p:submenu>
+                <p:submenu label="Navigations">
+                    <p:menuitem value="Website" url="http://www.primefaces.org" icon="pi pi-external-link"/>
+                </p:submenu>
+            </p:panelMenu>
+        </h:form>
+    </div>
+    </body>
+</f:view>
+</html>
