@@ -4,7 +4,8 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:jsf="http://xmlns.jcp.org/jsf"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:shiro="http://shiro.apache.org/tags">
 <f:view>
     <body>
     <div class="card">
@@ -17,22 +18,22 @@
                 </div>
             </div>
         </div>
-
         <h:form>
             <p:growl>
                 <p:autoUpdate/>
             </p:growl>
 
             <p:panelMenu style="width:300px">
+
                 <p:submenu label="Options">
                     <p:menuitem value="Save (Non-Ajax)" action="#{menuView.save}" ajax="false"
                                 icon="pi pi-save"/>
                     <p:menuitem value="Update" action="#{menuView.update}" icon="pi pi-refresh"/>
                     <p:menuitem value="Delete" action="#{menuView.delete}" icon="pi pi-times"/>
                 </p:submenu>
-                <p:submenu label="Navigations">
-                    <p:menuitem value="Website" url="http://www.primefaces.org" icon="pi pi-external-link"/>
-                </p:submenu>
+                    <p:submenu label="Navigations" rendered="#{}">
+                        <p:menuitem value="Website" url="http://www.primefaces.org" icon="pi pi-external-link"/>
+                    </p:submenu>
             </p:panelMenu>
         </h:form>
     </div>

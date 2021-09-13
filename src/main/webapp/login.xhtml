@@ -6,9 +6,12 @@
       xmlns:p="http://primefaces.org/ui"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:ui="http://java.sun.com/jsf/facelets">
-
+<f:metadata>
+    <f:event type="preRenderView" listener="#{login.authorizedUserControl}"/>
+</f:metadata>
 <h:head>
-    <h:outputStylesheet name="css/login.css"/>
+    <h:outputStylesheet name="webjars/primeflex/2.0.0/primeflex.css" />
+    <h:outputStylesheet library="css" name="login.css"/>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
     <title>Login Page</title>
     <link type="text/css"
@@ -42,22 +45,33 @@
             </h:panelGrid>
         </p:blockUI>
     </div>
-
     <h:form id="loginForm">
         <p:growl id="msg" showDetail="true" life="3000" />
         <p:panel id="loginPnl" header="Login"
                  style="width: 350px; margin: 0 auto;">
-            <h:panelGrid id="loginPanel" columns="2" cellpadding="5">
-                <h:outputText value="Username" />
-                <p:inputText id="username" value="#{login.userName}" required="true"></p:inputText>
-                <p:spacer /><p:spacer />
-                <h:outputText value="Password" />
-                <p:password id="password" value="#{login.password}" required="true"
-                            feedback="false"></p:password>
-                <p:message for="password"></p:message>
-            </h:panelGrid>
+                <div class="p-field p-col-12 p-md-4">
+                    <p:outputLabel for="username" value="User name" />
+                    <p:inputText id="username" style="width: 216px;" value="#{login.userName}" required="true" requiredMessage="username required" validatorMessage="username validate test">
+                        <f:validateLength for="username" maximum="6"/>
+                    </p:inputText>
+                </div>
+                <div class="p-field p-col-12 p-md-4">
+                    <p:outputLabel for="password" value="Password"/>
+                    <p:password id="password" value="#{login.password}" required="true" requiredMessage="password required" toggleMask="true" redisplay="true"
+                                feedback="false">
+                        <f:validator  validatorId="passwordValidator" />
+                    </p:password>
+                </div>
+<!--                <div class="p-field p-col-12 p-md-4">-->
+<!--                    <p:outputLabel for="key" value="Product Key"/>-->
+<!--                    <p:inputMask id="key" value="#{maskView.productKey}" mask="a*-999-a999" validateMask="true"/>-->
+<!--                </div>-->
+
+<!--                <p:message for="username" style="color: red"/>-->
+
+<!--                <p:message for="password" style="color: red"/>-->
             <h:panelGrid columns="1" cellpadding="10" width="100%">
-                <p:commandButton id="loginButton" action="#{login.loginControl}"
+                <p:commandButton id="loginButton" action="#{login.loginUser}"
                                  value="Login" update="loginForm" ajax="true" style="float: right;">
                 </p:commandButton>
             </h:panelGrid>
