@@ -20,22 +20,7 @@ public class LoginController implements Serializable {
     private String password;
     private boolean rememberMe=false;
 
-    @RequiresRoles(value = {"admin","user"},logical = Logical.AND)
-    public String loginControl() throws InterruptedException {
-        if (userName.equals("admin") && password.equals("admin")) {
-
-            // get Http Session and store username
-            return "index?faces-redirect=true";
-        } else {
-            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR,
-                    "Invalid Login!",
-                    "Please Try Again!"));
-
-            // invalidate session, and redirect to other pages
-            //message = "Invalid Login. Please Try Again!";
-            return "";
-        }
-    }
+    //@RequiresRoles(value = {"admin","user"},logical = Logical.OR)
     public void loginUser(){
 
         try{
@@ -43,23 +28,22 @@ public class LoginController implements Serializable {
             token.setRememberMe(rememberMe);
             Subject subject =SecurityUtils.getSubject();
             if(!subject.isAuthenticated()){
-                SecurityUtils.getSubject().login(token);
+                subject.login(token);
             }
 
         } catch (UnknownAccountException uae ) {
-            uae.printStackTrace();
             FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Login failed!", "Your username wrong"));
         } catch (IncorrectCredentialsException ice ) {
-            ice.printStackTrace();
             FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Login failed!", "Password is incorrect"));
         } catch (LockedAccountException lae ) {
-            lae.printStackTrace();
             FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Login failed!", "This username is locked"));
         } catch(AuthenticationException aex){
-            aex.printStackTrace();
             FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Login failed!", "Thông tin đăng nhập không đúng"));
         }
 
+    }
+    public void logout(){
+        SecurityUtils.getSubject().logout();
     }
     public void authorizedUserControl(){
         if(null != SecurityUtils.getSubject().getPrincipal()){

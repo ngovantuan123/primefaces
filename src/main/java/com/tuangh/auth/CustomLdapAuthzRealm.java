@@ -17,6 +17,7 @@ public class CustomLdapAuthzRealm extends DefaultLdapRealm {
         Object credentials = token.getCredentials();
         //log.debug("Authenticating user '{}' through LDAP", principal);
         principal = this.getLdapPrincipal(token);
+        principal=principal+"@vietbank.com.vn";
         LdapContext ctx = null;
 
         AuthenticationInfo var6;
@@ -28,5 +29,33 @@ public class CustomLdapAuthzRealm extends DefaultLdapRealm {
         }
 
         return var6;
+    }
+
+    protected String getUserDn(String principal) throws IllegalArgumentException, IllegalStateException {
+        if (!StringUtils.hasText(principal)) {
+            throw new IllegalArgumentException("User principal cannot be null or empty for User DN construction.");
+        } else {
+            String prefix = this.getUserDnPrefix();
+            String suffix = this.getUserDnSuffix();
+            if (prefix == null && suffix == null) {
+                //log.debug("userDnTemplate property has not been configured, indicating the submitted AuthenticationToken's principal is the same as the User DN.  Returning the method argument as is.");
+                return principal;
+            } else {
+                int prefixLength = prefix != null ? prefix.length() : 0;
+                int suffixLength = suffix != null ? suffix.length() : 0;
+                StringBuilder sb = new StringBuilder(prefixLength + principal.length() + suffixLength);
+                if (prefixLength > 0) {
+                    sb.append(prefix);
+                }
+
+                sb.append(principal);
+                if (suffixLength > 0) {
+                    sb.append(suffix);
+                }
+
+                return sb.toString();
+            }
+        }
+
     }
 }

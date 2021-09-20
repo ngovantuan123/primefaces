@@ -10,9 +10,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5aa8ccf0-e0fc-4799-b163-2756554495c1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_ha_ons_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_ha_simplefan_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_jdbc_ojdbc6_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_jdbc_ucp_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_security_oraclepki_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_security_osdt_cert_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_security_osdt_core_11_2_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/primefaces_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/primefaces_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc6_11_2_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/ojdbc6_11_2_0_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/primefaces.iml" beforeDir="false" afterPath="$PROJECT_DIR$/primefaces.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tuangh/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tuangh/Entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tuangh/Utils/SecurityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tuangh/Utils/SecurityUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tuangh/auth/CustomJDBCRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tuangh/auth/CustomJDBCRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tuangh/auth/CustomLdapAuthzRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tuangh/auth/CustomLdapAuthzRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tuangh/auth/TestLdapConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tuangh/auth/TestLdapConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tuangh/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tuangh/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tuangh/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tuangh/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shiro.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shiro.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/menu-left.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/menu-left.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/admin.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/admin.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/product/addproduct.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/share/product/addproduct.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/product/allproduct.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/share/product/allproduct.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/share/public.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user/user.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/user.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +83,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.13908207" />
     <property name="project.structure.side.proportion" value="0.45499182" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -67,6 +93,7 @@
       <recent name="C:\Users\tuannv\Downloads\DemoJSF\primefaces\src\main\webapp\WEB-INF\resources\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tuannv\Downloads\DemoJSF\primefaces\src\main\webapp\share" />
       <recent name="C:\Users\tuannv\Downloads\DemoJSF\primefaces\src\main\webapp\error" />
       <recent name="C:\Users\tuannv\Downloads\DemoJSF\primefaces\src\main\webapp" />
       <recent name="C:\Users\tuannv\Downloads\DemoJSF\primefaces\src\main\webapp\WEB-INF\resources\images" />
@@ -177,7 +204,8 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.52" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.52" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="primefaces:war exploded">
           <settings>
@@ -283,7 +311,7 @@
       <option name="presentableId" value="Default" />
       <updated>1630891398791</updated>
       <workItem from="1630891400463" duration="24619000" />
-      <workItem from="1630988591740" duration="77886000" />
+      <workItem from="1630988591740" duration="99435000" />
     </task>
     <servers />
   </component>
@@ -309,19 +337,29 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/tuangh/controller/ProductController.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tuangh/auth/TestLdapConnection.java</url>
-          <line>14</line>
+          <line>23</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/tuangh/auth/CustomJDBCRealm.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="30" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/tuangh/controller/LoginController.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tuangh/controller/ProductController.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tuangh/auth/CustomLdapAuthzRealm.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tuangh/auth/TestLdapConnection.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

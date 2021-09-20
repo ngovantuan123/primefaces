@@ -28,12 +28,12 @@ public class ProductController {
     public List<Product> getAll(){
         return this.allProduct;
     }
-    @RequiresPermissions(value = {"product:add"})
+    @RequiresPermissions(value = {"product:edit"})
     public void add() throws IOException {
-        if(SecurityUtils.getSubject().isPermitted("product:add")){
+        if(SecurityUtils.getSubject().isPermitted("product:edit")){
             System.out.println("ok");
             FacesContext.getCurrentInstance().getExternalContext()
-                    .redirect("/admin/product/allproduct.htm");
+                    .redirect("/share/product/allproduct.xhtml");
         }else{
             //logger
             FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Permission denied!", "Your don't have permission"));

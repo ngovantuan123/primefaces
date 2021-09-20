@@ -35,7 +35,13 @@
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-web:1.8.0" />
           <element id="library" level="project" name="Maven: org.owasp.encoder:encoder:1.2.2" />
           <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
-          <element id="library" level="project" name="Maven: com.oracle:ojdbc6:11.2.0.3" />
+          <element id="library" level="project" name="Maven: com.oracle.database.jdbc:ojdbc6:11.2.0.4" />
+          <element id="library" level="project" name="Maven: com.oracle.database.jdbc:ucp:11.2.0.4" />
+          <element id="library" level="project" name="Maven: com.oracle.database.security:oraclepki:11.2.0.4" />
+          <element id="library" level="project" name="Maven: com.oracle.database.security:osdt_cert:11.2.0.4" />
+          <element id="library" level="project" name="Maven: com.oracle.database.security:osdt_core:11.2.0.4" />
+          <element id="library" level="project" name="Maven: com.oracle.database.ha:simplefan:11.2.0.4" />
+          <element id="library" level="project" name="Maven: com.oracle.database.ha:ons:11.2.0.4" />
         </element>
       </element>
       <element id="directory" name="META-INF">

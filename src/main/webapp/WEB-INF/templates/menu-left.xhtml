@@ -25,13 +25,12 @@
 
             <p:panelMenu style="width:300px">
 
-                <p:submenu label="Options">
-                    <p:menuitem value="Save (Non-Ajax)" action="#{menuView.save}" ajax="false"
+                <p:submenu label="Quản lý product">
+                    <p:menuitem value="danh sách" url="/share/product/allproduct.xhtml" ajax="false"
                                 icon="pi pi-save"/>
-                    <p:menuitem value="Update" action="#{menuView.update}" icon="pi pi-refresh"/>
-                    <p:menuitem value="Delete" action="#{menuView.delete}" icon="pi pi-times"/>
+                    <p:menuitem value="Thêm" rendered="#{p:ifGranted('admin')}" url="/share/product/addproduct.xhtml"  icon="pi pi-refresh"/>
                 </p:submenu>
-                    <p:submenu label="Navigations" rendered="#{p:ifGranted('admin')}" >
+                    <p:submenu label="Menu ADMIN" rendered="#{p:ifGranted('admin')}" >
                         <p:menuitem value="Website" url="http://www.primefaces.org" icon="pi pi-external-link"/>
                     </p:submenu>
             </p:panelMenu>
