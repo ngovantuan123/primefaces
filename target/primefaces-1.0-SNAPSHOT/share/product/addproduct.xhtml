@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<f:view>
+    <ui:composition template="/WEB-INF/templates/template.xhtml">
+        <ui:define name="content">
+            <div class="card">
+                <h1>Thêm Sản Phẩm</h1>
+                <h:form>
+                    <div class="card">
+                        <div class="ui-fluid p-formgrid p-grid">
+                            <div class="p-field p-col-12 p-md-6">
+                                <p:outputLabel for="idProduct" value="Id"/>
+                                <p:inputText id="idProduct" value="#{productController.product.productId}"/>
+                            </div>
+                            <div class="p-field p-col-12 p-md-6">
+                                <p:outputLabel for="name" value="Name"/>
+                                <p:inputText id="name" value="#{productController.product.productName}"/>
+                            </div>
+                            <div class="p-field p-col-6">
+                                <p:outputLabel for="date" value="Date"/>
+                                <p:datePicker id="date" value="#{productController.product.createdDate}" showIcon="true"   />
+                            </div>
+                            <div class="p-field p-col-12 p-md-3">
+                                <p:outputLabel for="price" value="Price"/>
+                                <p:inputNumber id="price" value="#{productController.product.price}" symbol=" VND"
+                                               symbolPosition="s" decimalSeparator="," thousandSeparator="." />
+                            </div>
+                            <div class="p-field p-col-12 p-md-3">
+                                <p:outputLabel for="category" value="Category"/>
+                                <p:selectOneMenu id="category" rendered="true" value="#{productController.product.productCategory}">
+                                    <f:selectItem itemLabel="Select One" itemValue="#{null}" noSelectionOption="true"/>
+                                    <f:selectItem itemLabel="Samsung" itemValue="Samsung"/>
+                                    <f:selectItem itemLabel="Iphone" itemValue="Iphone"/>
+                                    <f:selectItem itemLabel="Mac OS" itemValue="MacOS"/>
+                                </p:selectOneMenu>
+                            </div>
+                        </div>
+                    </div>
+                    <h:commandButton  value="Thêm mới" actionListener="#{productController.add}" styleClass="p-mr-2"/>
+                </h:form>
+            </div>
+        </ui:define>
+    </ui:composition>
+</f:view>
+</html>

@@ -12,7 +12,6 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
 
 import java.sql.*;
-import java.util.Base64;
 
 public class CustomJDBCRealm extends JdbcRealm {
     private User user;
@@ -34,6 +33,9 @@ public class CustomJDBCRealm extends JdbcRealm {
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
         String userName = (String) authenticationToken.getPrincipal();
+        if(userName == null){
+            return null;
+        }
         SimpleAuthenticationInfo info = null;
         User user = getUserInfo(userName);
         info = new SimpleAuthenticationInfo(user.getUserName(), user.getPassword(),getName());

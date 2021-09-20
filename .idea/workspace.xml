@@ -10,35 +10,95 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5aa8ccf0-e0fc-4799-b163-2756554495c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_ha_ons_11_2_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_ha_simplefan_11_2_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_jdbc_ojdbc6_11_2_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_jdbc_ucp_11_2_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_security_oraclepki_11_2_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_security_osdt_cert_11_2_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_security_osdt_core_11_2_0_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/primefaces_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/primefaces_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc6_11_2_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/ojdbc6_11_2_0_3.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/error/expired.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tuangh/Entity/Product$ProductBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tuangh/Entity/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tuangh/Entity/User$UserBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tuangh/Entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tuangh/Utils/SecurityUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tuangh/Validator/PasswordValidator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tuangh/auth/CustomJDBCRealm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tuangh/auth/CustomLdapAuthzRealm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tuangh/auth/CustomRealm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tuangh/auth/MultipleRolesAuthorizationFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tuangh/auth/TestLdapConnection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tuangh/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/tuangh/controller/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/message.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/META-INF/context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/classes/com/tuangh/Entity/Product$ProductBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/classes/com/tuangh/Entity/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/classes/com/tuangh/Entity/User$UserBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/classes/com/tuangh/Entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/classes/com/tuangh/Utils/SecurityUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/classes/com/tuangh/Validator/PasswordValidator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/classes/com/tuangh/auth/CustomJDBCRealm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/classes/com/tuangh/auth/CustomLdapAuthzRealm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/classes/com/tuangh/auth/CustomRealm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/classes/com/tuangh/auth/MultipleRolesAuthorizationFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/classes/com/tuangh/auth/TestLdapConnection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/classes/com/tuangh/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/classes/com/tuangh/controller/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/classes/message.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/faces-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.9.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/commons-collections-3.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/encoder-1.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/jsf-api-2.2.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/jsf-impl-2.2.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/ojdbc6-11.2.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/ons-11.2.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/oraclepki-11.2.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/osdt_cert-11.2.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/osdt_core-11.2.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/primefaces-10.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/primeflex-2.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/shiro-cache-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/shiro-config-core-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/shiro-config-ogdl-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/shiro-core-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/shiro-crypto-cipher-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/shiro-crypto-core-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/shiro-crypto-hash-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/shiro-event-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/shiro-lang-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/shiro-web-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/simplefan-11.2.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/lib/ucp-11.2.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/resources/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/resources/css/primeflex.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/resources/images/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/resources/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/shiro.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/templates/footer.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/templates/header.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/templates/menu-left.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/templates/template.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/admin/admin.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/error/400.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/error/403.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/error/404.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/error/500.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/error/expired.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/index.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/login.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/share/product/addproduct.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/share/product/allproduct.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/primefaces-1.0-SNAPSHOT/user/user.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/primefaces.iml" beforeDir="false" afterPath="$PROJECT_DIR$/primefaces.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tuangh/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tuangh/Entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tuangh/Utils/SecurityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tuangh/Utils/SecurityUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tuangh/auth/CustomJDBCRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tuangh/auth/CustomJDBCRealm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tuangh/auth/CustomLdapAuthzRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tuangh/auth/CustomLdapAuthzRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tuangh/auth/TestLdapConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tuangh/auth/TestLdapConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tuangh/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tuangh/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tuangh/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tuangh/controller/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shiro.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shiro.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/header.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/header.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/menu-left.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/menu-left.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/template.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/template.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/admin.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/admin.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/product/addproduct.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/share/product/addproduct.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/product/allproduct.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/share/product/allproduct.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/share/public.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/user/user.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/user.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/share/product/allproduct.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/share/product/allproduct.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +108,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="jsf" />
         <option value="Class" />
+        <option value="jsf" />
       </list>
     </option>
   </component>
@@ -77,7 +137,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/tuan-data/lib/ojdbc6-11.2.0.3.jar" />
+    <property name="last_opened_file_path" value="D:/tuan-data/Tuan/vietbank/BackendOTT" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -311,7 +371,7 @@
       <option name="presentableId" value="Default" />
       <updated>1630891398791</updated>
       <workItem from="1630891400463" duration="24619000" />
-      <workItem from="1630988591740" duration="99435000" />
+      <workItem from="1630988591740" duration="117519000" />
     </task>
     <servers />
   </component>
@@ -352,16 +412,22 @@
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/tuangh/auth/CustomLdapAuthzRealm.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tuangh/auth/TestLdapConnection.java</url>
           <line>18</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tuangh/auth/CustomLdapAuthzRealm.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.apache.shiro.authc.UsernamePasswordToken" memberName="host" />
+        <PinnedItemInfo parentTag="org.apache.shiro.authc.UsernamePasswordToken" memberName="username" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

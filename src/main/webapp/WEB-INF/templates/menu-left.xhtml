@@ -9,15 +9,12 @@
 <f:view>
     <body>
     <div class="card">
-        <div class="p-col-12">
-            <div class="p-col-12">
-            <div class="p-d-flex p-jc-center" style="height:100px;background-color: #005489">
-                    <div class="p-d-flex-column">
-                        <p:graphicImage library="images" name="logo.png" />
-                    </div>
-                </div>
+        <div class="p-col-12 " style="padding: 0">
+            <div class="p-d-flex p-jc-center" style="height:80px;background-color: #005489;align-content: center;align-items: center">
+                <p:graphicImage library="images" name="logo.png" />
             </div>
         </div>
+    <div class="p-col-12 " style="padding: 0;padding-top: 8px;" >
         <h:form>
             <p:growl>
                 <p:autoUpdate/>
@@ -30,11 +27,13 @@
                                 icon="pi pi-save"/>
                     <p:menuitem value="Thêm" rendered="#{p:ifGranted('admin')}" url="/share/product/addproduct.xhtml"  icon="pi pi-refresh"/>
                 </p:submenu>
-                    <p:submenu label="Menu ADMIN" rendered="#{p:ifGranted('admin')}" >
-                        <p:menuitem value="Website" url="http://www.primefaces.org" icon="pi pi-external-link"/>
-                    </p:submenu>
+                <p:submenu label="Menu ADMIN" rendered="#{p:ifGranted('admin')}" >
+                    <p:menuitem value="Website" url="http://www.primefaces.org" icon="pi pi-external-link"/>
+                </p:submenu>
             </p:panelMenu>
         </h:form>
+    </div>
+
     </div>
     </body>
 </f:view>

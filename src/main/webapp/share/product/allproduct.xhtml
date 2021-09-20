@@ -13,7 +13,7 @@
         <ui:composition template="/WEB-INF/templates/template.xhtml">
             <ui:define name="content">
                 <div class="card">
-                    <p:button value="Thêm sản phẩm" rendered="#{p:ifGranted('admin')}"  styleClass="ui-button-outlined ui-button-success" outcome="addproduct?faces-redirect=true"/>
+                        <p:button value="Thêm sản phẩm" rendered="#{p:ifGranted('admin')}"  styleClass="ui-button-outlined ui-button-success" outcome="addproduct?faces-redirect=true"/>
                     <p:dataTable var="product" value="#{productController.all}">
                         <p:column headerText="Id">
                             <h:outputText value="#{product.productId}" />
